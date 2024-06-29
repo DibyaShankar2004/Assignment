@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 10px;
+            margin-bottom: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: safe;
+            align-items: center;
+            padding: 5px;
+            margin:auto;
+            background-color: #f1f1f1;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        nav a.sitename{
+            flex:1;
+            text-align: left;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium';
+            font-weight: bolder;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        nav a.sitename:hover {
+            background-color: #16065e;
+        }
+
+        nav a.sitename:active {
+            background-color: #7b5aef;
+        }
+        nav a.contact{
+            background-color: #e0e0e0;
+        }
+
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        content {
+            padding: 20px;
+            border: 1px solid #000;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .message {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .form-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+                <img src="gow-logo.png" alt="Logo" class="logo">
+                <a href="index.html" class="sitename" target="_blank"><p>GOD OF WAR</p></a>
+                <a href="contact.html" class="contact" target="_blank"><p>CONTACT</p></a>
+       </nav>
+    </header>
+    <div class="content">
+        <div class="message">
+        <p>Reach Us Out</p>
+        <p>&#x1F4E7:helpdesk@gow.com</p>
+        <p>&#128222:9182736455</p>
+        <br>
+        <p>OR</p>
+        <br>
+        <p>Fill the following contact details please:</p>
+        </div>
+        <div class="form-container">
+            <form action="javascript:submitForm()" onSubmit>
+                <label for="name">NAME:</label>
+                <input type="text" id="name" name="name" placeholder="Eg:Ankit" required><br><br>
+                
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" placeholder="Eg:xyz@gmail.com" required><br><br>
+                
+                <label for="genre">FAVOURITE GENRE:</label>
+                <input list="genres" id="genre" name="genre" required>
+                <datalist id="genres">
+                    <option value="Storymode">
+                    <option value="Shooter">
+                    <option value="Racing">
+                    <option value="Player Versus Player">
+                    <option value="Battle Royale">
+                    <option value="Horror">
+                    <option value="Others">
+                </datalist><br><br>
+                
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL</label><br><br>
+                
+                <input type="submit" value="SUBMIT">
+            </form>
+            <script>
+                function submitForm() {
+                    window.alert("Form Submitted, We will contact you soon")
+                }
+            </script>
+        </div>
+    </div>
+    <footer>
+        <p><b>ALL RIGHTS ARE RESERVED ©</b></p>
+    </footer>
+</body>
+</html>
