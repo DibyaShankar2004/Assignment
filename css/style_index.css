@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-image: url("/godr.jpg");
+    background-size:cover;
+    background-position: center;
+    opacity: 0.8;
+}
+header {
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: safe;
+    align-items: center;
+    padding: 5px;
+    margin:auto;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav a.sitename{
+    flex:1;
+    text-align: left;
+    background-color: #e0e0e0;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bolder;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+nav a.contact:hover {
+    background-color: #16065e;
+}
+
+nav a.contact:active {
+    background-color: #7b5aef;
+}
+.main {
+    text-align: center;
+    font-weight: bold;
+}
+.content1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 20px;
+}
+.content1 div {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    text-align:justify;
+    font-weight: bold
+}
+.content1 img {
+    margin-left: 430px;
+    width: 41%;
+    height: 95%;
+    opacity: 1;
+}
+    
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.content2 div {
+    flex: 1;
+    margin-right: 50px;
+    padding: 20px;
+    text-align: justify;
+    font-weight: bold
+}
+.content2 img {
+    margin-right: 200px;
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+.video {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+}

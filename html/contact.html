@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css\style_contact.css">
+    <script src="/javascript\script_contact.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+                <img src="/gow-logo.png" alt="Logo" class="logo">
+                <a href="/html\index.html" class="sitename" target="_blank"><p>GOD OF WAR</p></a>
+                <a href="/html\contact.html" class="contact" target="_blank"><p>CONTACT</p></a>
+       </nav>
+    </header>
+    <div class="content">
+        <div class="message">
+        <p>Reach Us Out</p>
+        <p>&#x1F4E7:helpdesk@gow.com</p>
+        <p>&#128222:9182736455</p>
+        <br>
+        <p>OR</p>
+        <br>
+        <p>Fill the following contact details please:</p>
+        </div>
+        <div class="form-container">
+            <form action="javascript:submitForm()" onSubmit>
+                <label for="name">NAME:</label>
+                <input type="text" id="name" name="name" placeholder="Eg:Ankit" required><br><br>
+                
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" placeholder="Eg:xyz@gmail.com" required><br><br>
+                
+                <label for="genre">FAVOURITE GENRE:</label>
+                <input list="genres" id="genre" name="genre" required>
+                <datalist id="genres">
+                    <option value="Storymode">
+                    <option value="Shooter">
+                    <option value="Racing">
+                    <option value="Player Versus Player">
+                    <option value="Battle Royale">
+                    <option value="Horror">
+                    <option value="Others">
+                </datalist><br><br>
+                
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL</label><br><br>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p><b>ALL RIGHTS ARE RESERVED ©</b></p>
+    </footer>
+</body>
+</html>
